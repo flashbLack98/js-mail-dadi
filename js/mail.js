@@ -4,9 +4,7 @@ let email = prompt("quale è la tua email");
 const utenti = ["Gino@gmail.com", "Mario@gmail.com", "Paolo@gmail.com", "Carlo@gmail.com"];
 
 
-
-
-
+//----------------------VERSIONE PIÙ VELOCE-------------------------------- 
 let messaggio = "male";
 
 for (i = 0; i < utenti.length; i++) {
@@ -39,7 +37,7 @@ alert(messaggio);
 
 
 
-
+//-----------------------VERSIONE PIÙ LUNGA-----------------------------
 
 /* let utenteNonConsentito = true;
 
