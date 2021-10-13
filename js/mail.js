@@ -5,24 +5,20 @@ const utenti = ["Gino@gmail.com", "Mario@gmail.com", "Paolo@gmail.com", "Carlo@g
 
 
 
-let utenteNonConsentito = true;
+
+
+let messaggio = "male";
 
 for (i = 0; i < utenti.length; i++) {
 
-
+    let mail = utenti[i];
 
     if (email === utenti[i]) {
-        utenteNonConsentito = false;
+        messaggio = "bene";
     }
-
-
 }
 
-if (utenteNonConsentito) {
-    alert("non entri");
-} else {
-    alert("entri");
-}
+alert(messaggio);
 
 
 
@@ -44,19 +40,22 @@ if (utenteNonConsentito) {
 
 
 
-/* let messaggio = "";
+
+/* let utenteNonConsentito = true;
 
 for (i = 0; i < utenti.length; i++) {
 
-    let mail = utenti[i];
-    console.log(utenti);
 
-    if (mail === email) {
-        messaggio = "bene";
 
-    } else {
-        messaggio = "male";
+    if (email === utenti[i]) {
+        utenteNonConsentito = false;
     }
+
+
 }
 
-alert(messaggio); */
+if (utenteNonConsentito) {
+    alert("non entri");
+} else {
+    alert("entri");
+} */
