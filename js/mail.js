@@ -3,19 +3,35 @@ let email = prompt("quale è la tua email");
 
 const utenti = ["Gino@gmail.com", "Mario@gmail.com", "Paolo@gmail.com", "Carlo@gmail.com"];
 
+let utenteNonConsentito = true;
+
 for (i = 0; i < utenti.length; i++) {
 
+
+
+    if (email === utenti[i]) {
+        utenteNonConsentito = false;
+    }
+
+
 }
-let mail = utenti;
-console.log(utenti);
 
-if (mail === email) {
-    alert("bene");
-
+if (utenteNonConsentito) {
+    alert("non entri");
 } else {
-    alert("male");
-
+    alert("entri");
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -29,6 +45,6 @@ if (mail === email) {
 
 //VEDERE SE L'UTENTE È NELLA LISTA
 
-// SE È NELLA LISTA VIENE ACCETTATO 
+// SE È NELLA LISTA VIENE ACCETTATO
 
 // SE NON È NELLA LISTA NON VIENE ACCETTATO
